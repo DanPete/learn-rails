@@ -28,7 +28,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # learn-rails
 gem 'bootstrap-sass'
-gem 'gibbon', '~> 2.2', '>= 2.2.4'
+gem 'gibbon', '~> 2.2', '>= 2.2.4'    #IMPORTANT: Gibbon now targets MailChimp API 3.0, which is very different from API 2.0. Use Gibbon 1.x if you need to target API 2.0.
 gem 'high_voltage'
 gem 'simple_form'
 group :development do
