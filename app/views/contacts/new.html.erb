@@ -1,0 +1,17 @@
+<% content_for :title do %>Contact<% end %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form col-centered">
+      <h3>Contact</h3>
+        <%= simple_form_for @contact do |form| %>
+          <%= form.error_notification %>
+          <%= form.input :name, autofocus: true %>
+          <%= form.input :email %>
+          <%= form.input :content, as: :text %>
+          <%= form.button :submit, 'Submit', class: 'submit' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
